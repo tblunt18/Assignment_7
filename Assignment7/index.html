@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+<body >
+    <h1 class="header">Spelman is #1</h1>
+    <div>
+        <p>It has a high retention rate for the student body</p>
+        <p>Spelman has top alumnae donations that aid in keeping the school going</p>
+        <p>The school chooses students from 137 countries that rank at the top of their schools</p>
+
+        <ol class="highlight">
+            <li>New student orientation</li>
+            <li>Roll call in sisters chapel</li>
+            <li>The brother sister exchange</li>
+            <li>Olive Branch</li>
+            <li>Big sister little sister CS exchange</li>
+            <li>Volunteering with NCNW</li>
+            <li>First Toga</li>
+            <li>Wellness revolution run with Dr. Tatum</li>
+        </ol>
+
+        <!-- heading -->
+        <h3 class="header">The Computer Science Major</h3>
+        <!-- subheading; response on why cs is great-->
+        <h4 class="sub-header">CS is a great major because it is lucrative and the options for
+            creating and building your own products are limitless. Also
+            companies are always in need of cs people so you'll always have job
+            options
+        </h4>
+    </div>
+
+
+
+    <button class="button" type="button">
+        Hide paragraphs
+    </button>
+    <script>
+        $(document).ready(function() {
+            //highlight header with different color
+            $(".header").css("color","orange");
+            //hide paragraphs on click
+            $(".button").click(function(){
+                $('p').hide();
+            });
+            //highlight text after click
+            $("li").click(function(){
+                $(this).css( "color", "lightblue");
+            });
+
+            $(".sub-header").click(function(){
+                $(this).css( "color", "lightblue");
+            });
+
+        });
+    </script>
+</body>
+</html>
